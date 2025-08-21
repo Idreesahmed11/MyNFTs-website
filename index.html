@@ -1,0 +1,851 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+</head>
+
+<body style="background-color: #2B2B2B; color: white;">
+    <section id="home-section" class="hero pt-md-3 ps-0 ">
+        <!-- NAVBAR -->
+        <nav data-aos="fade-down" data-aos-duration="1000"
+            class="navbar navbar-expand-lg navbar-dark bg-transparent px-md-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center ps-4" href="index.html">
+                    <img src="./img/Storefront.png" alt="Logo" class="me-2" style="height: 40px;">
+                    <span class="font-space-mono "> NFT Marketplace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-3">
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="marketplace.html">Marketplace</a></li>
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="ranking.html">Rankings</a></li>
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="connect.html">Connect a wallet</a></li>
+                        <li class="nav-item">
+                            <a href="account.html"
+                                class="slight-hover btn text-white fw-normal d-flex align-items-center rounded-4 py-2"
+                                style="background-color: #A259FF;">
+                                <img class="me-2" src="./img/User.png" alt="User"> Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <div class="container">
+        <!-- Main Section -->
+        <div class="row  justify-content-between align-items-center ps-4 ps-md-0 pe-4 pe-md-0 ">
+            <div data-aos="fade-right" data-aos-duration="1500"
+                class="col-12 col-md-6 text-light d-md-flex flex-md-column ps-md-5 ps-0">
+                <h1 class="d-none d-md-block pt-5  font-work-sans" style="font-size: 4rem; font-weight: 600; ">Discover
+                    <br>Digital Art
+                    & <br>Collect Nfts
+                </h1>
+                <h1 class="d-md-none d-flex pt-5 ps-3 font-work-sans">Discover Digital Art & Collect Nfts</h1>
+                <p class="h5 d-none d-md-block pt-4  lh-base fw-normal ">NFT Marketplace Ui Created With Anima For <br>
+                    Figma.
+                    Collect, Buy And Sell Art
+                    From More <br> Than 20k NFT Artists.</p>
+                <p class="d-flex d-md-none pt-2 font-work-sans bold ps-3 ">NFT Marketplace Ui Created With Anima For
+                    Figma. Collect, Buy And Sell Art
+                    From More Than 20k NFT Artists.</p>
+                <div class="pt-4 d-none d-md-block ">
+                    <a href="account.html"
+                        class="slight-hover btn-primary px-5 text-white text-decoration-none rounded-4 fw-bold"
+                        style="background-color: #A259FF; padding-top: 1rem; padding-bottom: 1rem;"> <i
+                            class="bi bi-rocket-takeoff me-2 slight-hover"></i> Get Started</a>
+
+                    <div class="d-flex  gap-5 pt-5">
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="font-space-mono fw-bold">240k+</h4>
+                            <span class="font-work-sans">Total Sale</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="font-space-mono fw-bold">100k+</h4>
+                            <span class="font-work-sans">Auctions</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h4 class="font-space-mono fw-bold">240k+</h4>
+                            <span class="font-work-sans">Artists</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 pb-md-5 pb-0 pt-5 ">
+                <a href="artist.html"><img class="img-fluid w-100 " src="./img/heroanimationtransparentbck-2.gif"
+                        alt=""></a>
+            </div>
+
+            <div class="pt-5 d-block d-md-none text-center me-5 me-md-0 px-4 px-md-0">
+                <button class=" btn-primary px-5 text-white  rounded-4 fw-bold w-100 border-0"
+                    style=" background-color: #A259FF; padding-top: 1rem; padding-bottom: 1rem;">
+                    <a href="" class="text-decoration-none text-white"><i class="bi bi-rocket-takeoff me-2 "></i> Get
+                        Started</a></button>
+
+                <div class="d-flex justify-content-between text-center g-5 pt-5 me-md-0 ">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="font-space-mono fw-bold">240k+</h4>
+                        <span class="font-work-sans">Total Sale</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="font-space-mono fw-bold">100k+</h4>
+                        <span class="font-work-sans">Auctions</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="font-space-mono fw-bold">240k+</h4>
+                        <span class="font-work-sans">Artists</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- TRENDING SECTION -->
+    <section class="py-5 ">
+        <div class="container px-5">
+            <div class="row">
+                <div data-aos="fade-right" data-aos-duration="1500" class="col-12">
+                    <h2 class="fw-bold pb-2 font-work-sans">Trending Collection</h2>
+                    <h6 class="fw-normal pb-md-5 font-work-sans ">Checkout Our Weekly Updated Trending Collection.<h6>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div data-aos="zoom-in-up" data-aos-duration="2000" class="col-12 col-md-6 col-lg-4 ">
+                    <a href="orbition.html"><img class="slight-hover img-fluid rounded-4 mb-3 w-100"
+                            src="./img/Primary Photo Placeholder.png" alt=""></a>
+                    <div class="d-flex align-items-center justify-content-between gap-2 mb-3 ">
+                        <a href="orbition.html"><img class="slight-hover img-fluid "
+                                src="./img/Secondary Photo Placeholder.png" alt=""></a>
+                        <a href="orbition.html"><img class="slight-hover img-fluid"
+                                src="./img/Secondary Photo Placeholder (1).png" alt=""></a>
+                        <a href="orbition.html"><img class="slight-hover img-fluid "
+                                src="./img/Number of additional NFTs.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h5 class="font-work-sans pt-2 "> Dsgn Animals</h5>
+                        <a href="artist.html" class="text-decoration-none text-white">
+                            <h6 class="font-work-sans"><img class="pe-2" src="./img/Asset 12 2.png" alt=""> MrFox</h6>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000" class="col-12 col-lg-4 col-md-6 d-none d-md-block ">
+                    <a href="orbition.html"> <img src="./img/Primary Photo Placeholder (1).png"
+                            class="slight-hover img-fluid rounded-4 mb-3 w-100" alt=""></a>
+                    <div class="d-flex align-items-center justify-content-between gap-2 mb-3  ">
+
+                        <a href="orbition.html"> <img class="slight-hover img-fluid"
+                                src="./img/Secondary2 Photo Placeholder.png" alt=""></a>
+                        <a href="orbition.html"> <img class="slight-hover img-fluid ps-2"
+                                src="./img/Secondary Photo Placeholder (2).png" alt=""></a>
+                        <a href="orbition.html"> <img class="slight-hover img-fluid ps-2"
+                                src="./img/Number of additional NFTs.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h5 class="font-work-sans pt-2"> Magic Mushrooms</h5>
+                        <a href="artist.html" class="text-decoration-none text-white">
+                            <h6 class="font-work-sans"><img class="pe-2" src="./img/Asset 12 2 (1).png" alt=""> Shroomie
+                                <h6>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000" class="col-12 col-lg-4 col-md-6 d-none d-md-block ">
+                    <a href="orbition.html"> <img src="./img/Primary Photo Placeholder (2).png"
+                            class="slight-hover img-fluid rounded-4 mb-3 w-100" alt=""></a>
+                    <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                        <a href="orbition.html"> <img class="slight-hover img-fluid "
+                                src="./img/thirtd Photo Placeholder.png" alt=""></a>
+                        <a href="orbition.html"> <img class="slight-hover img-fluid ps-2"
+                                src="./img/Third Photo Placeholder (1).png" alt=""></a>
+                        <a href="orbition.html"> <img class="slight-hover img-fluid ps-2"
+                                src="./img/Number of additional NFTs.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h5 class="font-work-sans pt-2"> Dsgn Animals</h5>
+                        <a href="artist.html" class="text-decoration-none text-white">
+                            <h6 class="font-work-sans"><img class="pe-2" src="./img/Avatar.png" alt=""> BeKind2Robots
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREATORS SECTION -->
+    <section>
+        <div class="container px-5 ">
+            <div class="row  d-flex align-items-center pb-5">
+                <div data-aos="zoom-in-right" data-aos-duration="2000" class="col-lg-9">
+                    <h1 class="font-work-sans">Top Creators</h1>
+                    <p class="font-work-sans fw-normal pt-2 ">Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="2000" class="col-lg-3  text-end d-md-block d-none">
+                    <a class="slight-hover btn py-3 px-4 text-decoration-none rounded-4 text-white w-100"
+                        style="border:2px solid #A259FF;" href="ranking.html"><i class="bi bi-rocket-takeoff me-2"
+                            style="color: #A259FF;"> </i>View Rankings</a>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-center g-4 pb-5">
+                <div data-aos="fade-up" data-aos-duration="2000" class="col-md-3 col-12 slight-hover ">
+                    <div class="p-md-4 p-2" style="border-radius: 10%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">1</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Asset 12 22.png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 fw-bold ">Keepitreal</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-md-3 col-12 slight-hover  ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">2</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Avatar mini (1).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Avatar mini (1).png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">DigiLab</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" class="col-md-3 col-12 slight-hover ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">3</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Avatar 222.png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Avatar 222.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">GravityOne</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-md-3 col-12 slight-hover ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">4</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar.png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Artist Avatar.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Juanie</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" class="col-md-3 col-12 slight-hover ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">5</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist 3 1.png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Artist 3 1.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">BlueWhale</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  text-end d-md-none d-blocked text-center pt-3 pb-0">
+                    <a class="btn py-3 px-5 text-decoration-none rounded-4 text-white"
+                        style="border:2px solid #A259FF; width: 100%;" href=""><i class="bi bi-rocket-takeoff me-2"
+                            style="color: #A259FF;"> </i>View Rankings</a>
+                </div>
+
+                <div data-aos="fade-down" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">6</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Asset 3 2.png" alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Mr Fox</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">7</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar (1).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Shroomie</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">8</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Asset 12 2 3l.png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Keepitreal</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">9</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar (5).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Artist Avatar (5).png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">RustyRobot</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">10</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar (4).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Artist Avatar (4).png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">AnimaKid</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">11</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar (2).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Dotgy</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000"
+                    class="col-md-3 col-12 slight-hover d-none d-md-block ">
+                    <div class="p-md-4 p-2" style="border-radius: 9%; background-color: #3B3B3B;">
+                        <span class="ms- mt-2 position-absolute rounded-circle text-center font-space-mono"
+                            style="background-color: #2B2B2B; color: rgb(121, 118, 118); width: 25px;">12</span>
+                        <div class="text-start text-md-center d-flex flex-md-column align-items-center">
+                            <a href="artist.html"> <img class="d-md-block d-none ps-2" src="./img/Artist Avatar (3).png"
+                                    alt="">
+                                <img style="width: 70px; height: 70px;" class="d-md-none d-block d-flex "
+                                    src="./img/Asset 12 22.png" alt=""></a>
+
+                            <div class="text-start text-md-center p-4 p-md-0">
+                                <h5 class="font-work-sans pt-md-4 ">Ghiblier</h5>
+                                <small class="font-work-sans" style=" color: #8b7e7e;">Total Sales:</small>
+                                <span class="font-space-mono">34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section>
+        <div class="container p-0">
+            <div class="p-5">
+                <h1> Browse Categories</h1>
+                <div data-aos="zoom-out-down" data-aos-duration="2000" data-aos-delay="1000" class="row g-4 pt-5">
+                    <div class="col-6 slight-hover slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon.png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">Art
+                        </h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Category Icon.png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-md-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Colectible</h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (1).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Music
+                        </h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (2).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-md-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Photogrph</h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (3).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Video
+                        </h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (4).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Utility
+                        </h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (5).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Sport
+                        </h4>
+                    </div>
+                    <div class="col-6 slight-hover col-lg-3 ">
+                        <a href="marketplace.html">
+                            <img class="img-fluid w-100" src="./img/Photo & Icon (6).png" alt=""></a>
+                        <h4 class="p-3 pt-4 rounded-bottom-4 ps-4 font-work-sans" style="background-color: #3B3B3B;">
+                            Virtual</h4>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NFTS SECTION -->
+    <section>
+        <div class="container pt-5 mt-md-5 ps-5 pe-5 ps-md-5 pe-md-5 pb-0 pb-md-5">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="1000">
+                    <h1 class="font-work-sans">Discover More Nfts</h1>
+                    <h5 class="font-work-sans">Explore New Trending Nfts</h5>
+                </div>
+                <a data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="1000"
+                    class="btn px-5 py-3 rounded-4 text-white d-none d-md-block slight-hover "
+                    style="border: 2px solid #A259FF; " href="marketplace.html">
+                    <i class="bi bi-eye pe-2" style="color: #A259FF ;"></i>See All
+                </a>
+            </div>
+            <div data-aos="zoom-out-up" data-aos-duration="2000" data-aos-delay="1000" class="row pt-5 mb-5">
+                <div class="col-lg-4 slight-hover">
+                    <a href="orbition.html"><img class="w-100" src="./img/Image Placeholder (1).png" alt=""></a>
+                    <div class="pt-3 rounded-bottom-4" style="background-color: #3b3b3b;">
+                        <h4 class="font-work-sans ps-4">Distant Galaxy</h4>
+                        <div class="d-flex align-items-center ps-4 "><img src="./img/avatar chota.png" alt="">
+                            <h5 class="font-space-mono ps-2">MoonDancer</h5>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <span class="font-space-mono pt-3 ps-4" style="color: #706e6e;">Price</span>
+                            <span class="font-space-mono pt-3 pe-4" style="color: #706e6e;"> Highest Bid</span>
+                        </div>
+                        <div class="d-flex justify-content-between pb-3 ">
+                            <span class="font-space-mono pt-2 ps-4">1.63 ETH</span>
+                            <span class="font-space-mono pt-2 pe-4">0.33 wETH</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 slight-hover pt-5 pt-md-0">
+                    <a href="orbition.html"><img class="w-100" src="./img/Image R.png" alt=""></a>
+                    <div class="pt-3 rounded-bottom-4" style="background-color: #3b3b3b;">
+                        <h4 class="font-work-sans ps-4">Life On Edena</h4>
+                        <div class="d-flex align-items-center ps-4 "><img src="./img/Asset 12 244.png" alt="">
+                            <h5 class="font-space-mono ps-2">NebulaKid</h5>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <span class="font-space-mono pt-3 ps-4" style="color: #706e6e;">Price</span>
+                            <span class="font-space-mono pt-3 pe-4" style="color: #706e6e;"> Highest Bid</span>
+                        </div>
+                        <div class="d-flex justify-content-between pb-3 rounded-4">
+                            <span class="font-space-mono pt-2 ps-4">1.63 ETH</span>
+                            <span class="font-space-mono pt-2 pe-4">0.33 wETH</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 slight-hover pt-5 pt-md-0">
+                    <a href="orbition.html"><img class="w-100" src="./img/Image (1).png" alt=""></a>
+                    <div class="pt-3 rounded-bottom-4" style="background-color: #3b3b3b;">
+                        <h4 class="font-work-sans ps-4">AstroFiction</h4>
+                        <div class="d-flex align-items-center ps-4 "><img src="./img/Avatar444.png" alt="">
+                            <h5 class="font-space-mono ps-2">Spaceone</h5>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <span class="font-space-mono pt-3 ps-4" style="color: #706e6e;">Price</span>
+                            <span class="font-space-mono pt-3 pe-4" style="color: #706e6e;"> Highest Bid</span>
+                        </div>
+                        <div class="d-flex justify-content-between pb-3 rounded-4">
+                            <span class="font-space-mono pt-2 ps-4">1.63 ETH</span>
+                            <span class="font-space-mono pt-2 pe-4">0.33 wETH</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-block d-md-none pt-5 text-center"><a
+                        class="btn slight-hover px-5 py-3 rounded-4 text-white "
+                        style="border: 2px solid #A259FF; width: 100%; " href="marketplace.html">
+                        <i class="bi bi-eye pe-2" style="color: #A259FF ;"></i>See All
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAGIC SECTION -->
+
+    <section id="Magic-mash" class="d-flex align-items-end text-start p-2 p-md-0">
+        <div class="container pb-5 px-5">
+            <div class="row pb-5 gap-4 mb-5 mb-md-0">
+                <div class="col-12 pb-md-4 ">
+                    <a href="artist.html" class="text-decoration-none text-white">
+                        <div style="background-color: #2B2B2B ;"
+                            class="rounded-pill position-absolute px-4 py-3 d-flex">
+                            <img class="px-1" src="./img/Asset 12 2 mashroom.png" alt="">
+                            <span>Shroomie</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between align-content-center gx-0">
+                <div class="col-md-6">
+                    <h1 class="font-work-sans" style="font-size: 3.5vw; font-weight: 600;">Magic Mashrooms</h1>
+                    <div
+                        class="slight-hover d-none d-md-block btn bg-light text-dark rounded-4 mt-5 py-3 d-flex align-items-center justify-content-center w-50">
+                        <i class="bi bi-eye fs-5" style="color: #A259FF;"></i>
+                        <a href="#" class="text-decoration-none text-dark fw-bold ms-2">See NFT</a>
+                    </div>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="1000" class="col-md-6 ">
+                    <div class="timer-box ms-md-auto  " id="timer">
+                        <div>
+                            <h6 class="font-work-sans ps-5 pb-2">Auction ends in :</h6>
+                        </div>
+                        <div class="d-flex justify-content-center gap-md-2 text-center">
+                            <div>
+                                <div id="hours" class="fw-bold fs-1">01</div>
+                                <div class="text-white font-work-sans  fs-5">Hours</div>
+                            </div>
+                            <span class="fw-1 g">:</span>
+                            <div>
+                                <div id="minutes" class="fw-bold fs-1">00</div>
+                                <div class="text-white font-work-sans  fs-5">Minutes</div>
+                            </div>
+                            <span class="fw-1">:</span>
+                            <div>
+                                <div id="seconds" class="fw-bold fs-1 ">00</div>
+                                <div class="text-white font-work-sans  fs-5">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-0">
+                        <a class="slight-hover btn px-5  py-3  rounded-4 fw-bold font-work-sans d-block d-md-none  "
+                            style="background-color: aliceblue; ; " href="#">
+                            <i class="bi bi-eye pe-2" style="color: #A259FF ;"></i>See NFT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- WALLET SECTION -->
+
+    <section>
+        <div class="container pt-5  pb-4 px-5">
+            <div>
+                <h1 class="pb-1 font-work-sans pt-md-5 fw-bold">How It Works</h1>
+                <h6 class="ps-1 pb-md-5 pb-4 fw-normal font-work-sans">Find Out How To Get Started</h6>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000" class="row pb-5">
+                <div class="col-12 col-md-4 ps-md-0 ">
+                    <div class=" rounded-4 d-flex flex-row flex-md-column align-items-center text-center"
+                        style="background-color: #363636">
+                        <img src="./img/Icon.png" class="img-fluid d-none d-md-block ">
+                        <img style="width: 150px; height: 100px; " src="./img/wallet.png"
+                            class="mb-4 pt-3 ps-3 img-fluid  d-md-none" alt="">
+                        <div class="text-start text-md-center py-md-3 py-0  ">
+                            <h5 class="font-work-sans pt-2 ps-3 pt-md-0 ps-md-0">Setup Your Wallet</h5>
+                            <p class="p-md-4 ps-3 pt-2 font-work-sans"> Set up your wallet of choice. Connect it to the
+                                Animarket by clicking the
+                                wallet icon in the top.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 py-3 p-md-0">
+                    <div class="rounded-4 d-flex flex-row flex-md-column align-items-center text-center "
+                        style="background-color: #363636">
+                        <img src="./img/Icon (1).png" class="img-fluid d-none d-md-block">
+                        <img style="width: 150px; height: 100px; " src="./img/wallet 2.png"
+                            class="mb-4 pt-3 ps-3 img-fluid  d-md-none" alt="">
+                        <div class="text-start text-md-center py-md-3 py-0">
+                            <h5 class="font-work-sans pt-2 ps-3 pt-md-0 ps-md-0">Create Collection</h5>
+                            <p class="p-md-4 ps-3 pt-2 font-work-sans">Upload your work and setup your collection. Add a
+                                description, social links
+                                and floor
+                                price that is very good.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 pe-md-0">
+                    <div class="rounded-4  d-flex flex-row flex-md-column align-items-center text-center "
+                        style="background-color: #363636">
+                        <img src="./img/Icon (2).png" class="img-fluid d-none d-md-block">
+                        <img style="width: 150px; height:100px; " src="./img/wallet 3.png"
+                            class="mb-4 pt-3 ps-3 img-fluid  d-md-none" alt="">
+                        <div class="text-start text-md-center py-md-3 py-0">
+                            <h5 class="font-work-sans pt-2 ps-3 pt-md-0 ps-md-0">Start Earning</h5>
+                            <p class="p-md-4 ps-3 pt-2 font-work-sans">Choose between auctions and fixed-price listings.
+                                Start earning by selling
+                                your NFTs
+                                or trading others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+
+    <section>
+        <div class="container mb-md-5 px-md-5 px-4 pt-md-5 pt-0">
+            <div class="row rounded-4 " id="weekly-digest" style="background-color: #363636">
+                <div class="col-md-6 col-12">
+                    <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" class="m-md-5 m-3"
+                        id="weekly-photo">
+                        <img src="img/Photo.png" alt="" class="img-fluid spaceImg w-100 rounded-4 w-100">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="m-md-5 p-4 p-md-0">
+                        <h1 class="font-work-sans fw-bold">Join Our Weekly Digest</h1>
+                        <h4 class="font-work-sans fw-normal mt-3 d-none d-md-block"> Get Exclusive Promotions & Updates
+                            Straight To Your
+                            Inbox.</h4>
+                        <p class="font-work-sans mt-3 d-block d-md-none">Get Exclusive Promotions & Updates
+                            Straight To Your
+                            Inbox.</p>
+                        <div class="d-none d-md-block mb-3 d-flex mt-5 position-relative slight-hover"
+                            style="max-width: 500px;">
+                            <input type="email" class="form-control rounded-4 py-3 px-4 "
+                                placeholder="Enter your email here" aria-label="Email">
+                            <button class=" btn px-5 rounded-4 position-absolute top-0 end-0 py-3 px-4"
+                                style="background-color: #A259FF;" type="button">Subscribe</button>
+                        </div>
+                        <div class="d-block d-md-none mb-3 mt-5 slight-hover">
+                            <input type="email" class="form-control rounded-4 py-2 px-2"
+                                placeholder="Enter your email Address" aria-label="Email">
+                            <button class="btn mt-3 rounded-4 py-2 text-white w-100" style="background-color: #A259FF;"
+                                type="button">
+                                <i class="bi bi-envelope me-2"></i> Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #363636; ">
+        <div class="container pb-5 ps-5 ps-md-0 pe-3 pe-md-0">
+            <div class="row justify-content-between ">
+                <div class="col-12 col-md-4 ps-md-5  pt-md-4 pt-4 ">
+                    <div class="d-flex flex-row ps-md-5 pt-4 gap-2">
+                        <img src="./img/Storefront.png" alt="">
+                        <h4 class="font-space-mono mb-0">NFT Marketplace</h4>
+                    </div>
+                    <p class="pt-md-5 pt-3 font-work-sans ps-md-5 text-footer"> NFT marketplace UI created with Anima
+                        for
+                        Figma.</p>
+                    <p class="pt-md-3 font-work-sans ps-md-5 text-footer">Join our community</p>
+                    <div class="pt-2 flex-row ps-md-5 gap-2">
+                        <img src="./img/DiscordLogo.png" alt="">
+                        <img src="./img/YoutubeLogo.png" alt="">
+                        <img src="./img/TwitterLogo.png" alt="">
+                        <img src="./img/InstagramLogo.png" alt="">
+
+                    </div>
+                </div>
+                <div class=" col-12 col-md-2 d-flex flex-column pt-5">
+
+                    <h4 class="font-space-mono ps-md-3 pb-md-5">Explore</h4>
+                    <a href="marketplace.html">
+                        <p class="slight-hover ps-md-3 text-footer">Marketplace</p>
+                    </a>
+                    <a href="ranking.html">
+                        <p class="slight-hover font-size ps-md-3 text-footer">Rankings</p>
+                    </a>
+                    <a href="connect.html">
+                        <p class="slight-hover font-size ps-md-3 text-footer">Connect a wallet</p>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-6 pt-md-5 pt-3 ps-md-5 ps-2 pe-3 pe-md-0  text-start">
+                    <h4 class="font-space-mono fw-bold pb-md-5">Join Our Weekly Digest</h4>
+                    <p class="font-size  text-footer"> Get exclusive promotions & updates straight to your inbox.</p>
+                    <div class="slight-hover d-none d-md-block pt-md-2 d-flex  position-relative"
+                        style="max-width: 400px;">
+                        <input type="email" class="form-control rounded-4 py-3 px-4" placeholder="Enter your email here"
+                            aria-label="Email">
+                        <button class="btn px-5 rounded-4 position-absolute end-0 py-3 px-4"
+                            style="background-color: #A259FF; top:8px;" type="button">Subscribe</button>
+                    </div>
+                    <div class="d-block d-md-none  mb-3  pe-3">
+                        <input type="email" class="form-control rounded-4 py-2 px-2"
+                            placeholder="Enter your email Address" aria-label="Email">
+                        <button class="btn mt-3 rounded-4 py-2 text-white w-100" style="background-color: #A259FF;"
+                            type="button">
+                            <i class="bi bi-envelope me-2"></i> Subscribe
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="mt-3 mt-md-5 me-4 me-md-0" style="border-color: #f8f5f5;">
+            <small class="ps-4 ps-md-5 text-start" style="color: #9e9a9a;">Ⓒ NFT Market. Use this template
+                freely.</small>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    let totalSeconds = 60 * 60; // 1 hour
+
+    function updateTimer() {
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+        document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+
+        if (totalSeconds > 0) {
+            totalSeconds--;
+        } else {
+            clearInterval(timerInterval);
+        }
+    }
+
+    const timerInterval = setInterval(updateTimer, 1000);
+    updateTimer();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

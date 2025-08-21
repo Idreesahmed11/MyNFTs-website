@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #2B2B2B; color: white; ">
+    <section class=" pt-md-3 ps-0 "> 
+        <nav data-aos="fade-down" data-aos-duration="1000"
+            class="navbar navbar-expand-lg navbar-dark bg-transparent px-md-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center ps-4" href="index.html">
+                    <img src="./img/Storefront.png" alt="Logo" class="me-2" style="height: 40px;">
+                    <span class="font-space-mono "> NFT Marketplace</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-3">
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="marketplace.html">Marketplace</a></li>
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="ranking.html">Rankings</a></li>
+                        <li class="nav-item"><a class="slight-hover nav-link text-white fw-bold"
+                                href="connect.html">Connect a wallet</a></li>
+                        <li class="nav-item">
+                            <a href="account.html"
+                                class="slight-hover btn text-white fw-normal d-flex align-items-center rounded-4 py-2"
+                                style="background-color: #A259FF;">
+                                <img class="me-2" src="./img/User.png" alt="User"> Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </section>
+
+
+        <section>
+        <div class="container pt-5 ps-md-5 ps-4 pe-4 pe-md-0 pb-md-5 pb-4">
+            <div class="row ps-3 pe-3">
+                <div  data-aos="fade-right" data-aos-duration="1500" class="col-12">
+                    <h1 class="font-work-sans" style="font-size: 3rem;">Top Creators</h1>
+                    <h6 class="font-work-sans ">Check out top ranking NFT artists on the NFT Marketplace.</h6>
+                </div>
+            </div>
+
+            <div class="row px-3 pt-md-5 mt-5 d-flex align-items-center">
+                <div class="col-3 justify-content-center d-flex " style="border-bottom: 1px solid  #bebebe; ">
+                    <div class="font-work-sans py-2 d-flex gap-2 align-items-center justify-content-center">
+                        <h5 class="mb-0 d-none d-md-block fw-bold">Today</h5>
+                        <h5 class="mb-0 d-block d-md-none fw-bold">1d</h5>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center d-flex">
+                    <div class="font-work-sans  d-flex gap-2 align-items-center justify-content-center py-2">
+                        <h5 class="text-secondary mb-0 d-none d-md-block">This Week </h5>
+                        <h5 class="text-secondary mb-0 d-block d-md-none">7d </h5>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center d-flex ">
+                    <div class="font-work-sans py-2 d-flex gap-2 align-items-center justify-content-center">
+                        <h5 class="mb-0 text-secondary d-none d-md-block">This Month</h5>
+                        <h5 class="mb-0 text-secondary d-block d-md-none">30d</h5>
+
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center d-flex">
+                    <div class="font-work-sans   align-items-center justify-content-center ">
+                        <h5 class="text-secondary mb-0 d-none d-md-block"> All Time </h5>
+                        <p class="text-secondary mb-0 d-block d-md-none"> All Time </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row ps-3 pe-3 pt-md-3 ps-md-5 pe-md-5 pb-5">
+                <div class="px-2">
+                    <div class="py-2 d-flex rounded-4 text-secondary d-flex justify-content-between " style="border: 1px solid #6c6666">
+                        <div class="ps-4 col-8 col-md-6 d-flex align-items-center gap-4">
+                            <div>#</div>
+                            <div class="font-work-sans ">Artist</div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>Change</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>NFTs Sold</span>
+                        </div>
+                        <div class="col-4 col-md-2 ">
+                            <span>Volume</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div  data-aos="fade-up" data-aos-duration="1500" class="pt-3 ">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2  bg-dark  text-secondary font-space-mono small">1</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">1</div>
+                            <div class="d-flex flex align-items-center ps-3">
+                                <img class="d-flex d-md-none" src="./img/Asset 12 2.png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Asset 12 2.png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3 fw-light">Jaydon Ekstrom </span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">2</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">2</div>
+                            <div class="ps-3 d-flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (1).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (1).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Ruben Carder</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">3</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">3</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (3).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (3).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Alfredo Septimus</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">4</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">4</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (4).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (4).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Davic Franci</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">5</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">5</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (5).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (5).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Livia Rosser</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">6</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">6</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (7).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (7).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Kianna Donin</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">7</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">7</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (8).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (8).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Phillip Lipshutz</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">8</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">8</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (13).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (13).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Maria Rosser</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-2 bg-dark  text-secondary font-space-mono small">9</div>
+                            <div class="d-block d-md-none rounded-circle px-2 text-secondary font-space-mono small">9</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (10).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (10).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Andgel Lubin</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">10</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">10</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (13).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (13).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Maria Lubin</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">11</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">11</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Avatar Placeholder-1(1).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Avatar Placeholder-1(1).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Davis Workman</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">12</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">12</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (3).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (3).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Lindsey Lipshutz</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">13</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">13</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Asset 12 2 3l.png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Asset 12 2 3l.png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Randy Carder</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">14</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">14</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Artist Avatar (4).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Artist Avatar (4).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Lydia Culhane</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">15</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">15</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Artist Avatar.png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Artist Avatar.png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Rayna Bator</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">16</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">16</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Avatar Placeholder-4.png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Avatar Placeholder-4.png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Jocelyn Westervelt</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">17</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">17</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Avatar Placeholder.png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Avatar Placeholder.png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Marillyn Torff</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">18</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">18</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (10).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (13).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Skylar Levin</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">19</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small text-secondary font-space-mono ">19</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (7).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (7).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Terry Dorwart</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="pt-3">
+                    <div class="py-1 px-2 d-flex rounded-4 align-items-center font-work-sans slight-hover d-flex justify-content-between "
+                        style="border: 1px solid #6c6666; background-color: #363636;">
+                        <div class="col-8 col-md-6 ps-2 d-flex align-items-center ">
+                            <div class="d-none d-md-block rounded-circle px-1 small bg-dark  text-secondary font-space-mono ">20</div>
+                            <div class="d-block d-md-none rounded-circle px-1 small  text-secondary font-space-mono ">20</div>
+                            <div class="ps-3 d-flex flex align-items-center">
+                                <img class="d-flex d-md-none" src="./img/Ranking/Artist Avatar (8).png" alt=""
+                                    style="width: 40px; height: 43px;">
+                                <img class="d-none d-md-block" src="./img/Ranking/Artist Avatar (8).png" alt=""
+                                    style="width: 50px;">
+                                <span class="font-work-sans text-white ps-3">Ekstrom Bothman</span>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span style="color: #00A84D">+1.41%</span>
+                        </div>
+                        <div class="col-2 d-none d-md-block">
+                            <span>602</span>
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <span>12.4 ETH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+        
+        <footer style="background-color: #363636; ">
+        <div class="container pb-5 ps-5 pe-5 pe-md-0">
+            <div class="row justify-content-between ">
+                <div class="col-12 col-md-4 ps-md-5  pt-4 ">
+                    <div class="d-flex flex-row pt-4 gap-2">
+                        <img src="./img/Storefront.png" alt="">
+                        <h4 class="font-space-mono mb-0">NFT Marketplace</h4>
+                    </div>
+                    <p class="pt-md-5 pt-3 font-work-sans  text-footer"> NFT marketplace UI created with Anima for
+                        Figma.</p>
+                    <p class="pt-md-3 font-work-sans  text-footer">Join our community</p>
+                    <div class="pt-2 flex-row  gap-2">
+                        <img src="./img/DiscordLogo.png" alt="">
+                        <img src="./img/YoutubeLogo.png" alt="">
+                        <img src="./img/TwitterLogo.png" alt="">
+                        <img src="./img/InstagramLogo.png" alt="">
+
+                    </div>
+                </div>
+                <div class=" col-12 col-md-2 d-flex flex-column pt-5">
+
+                    <h4 class="font-space-mono ps-md-3 pb-md-5">Explore</h4>
+                    <a href="marketplace.html">
+                        <p class="slight-hover ps-md-3 text-footer">Marketplace</p>
+                    </a>
+                    <a href="ranking.html">
+                        <p class="slight-hover font-size ps-md-3 text-footer">Rankings</p>
+                    </a>
+                    <a href="connect.html">
+                        <p class="slight-hover font-size ps-md-3 text-footer">Connect a wallet</p>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-6 pt-md-5 pt-3 ps-md-5 ps-2 pe-3 pe-md-0  text-start">
+                    <h4 class="font-space-mono fw-bold pb-md-5">Join Our Weekly Digest</h4>
+                    <p class="font-size  text-footer"> Get exclusive promotions & updates straight to your inbox.</p>
+                    <div class="slight-hover d-none d-md-block pt-md-2 d-flex  position-relative"
+                        style="max-width: 400px;">
+                        <input type="email" class="form-control rounded-4 py-3 px-4" placeholder="Enter your email here"
+                            aria-label="Email">
+                        <button class="btn px-5 rounded-4 position-absolute end-0 py-3 px-4"
+                            style="background-color: #A259FF; top:8px;" type="button">Subscribe</button>
+                    </div>
+                    <div class="d-block d-md-none  mb-3">
+                        <input type="email" class="form-control rounded-4 py-2 px-2"
+                            placeholder="Enter your email Address" aria-label="Email">
+                        <button class="btn mt-3 rounded-4 py-2 text-white w-100" style="background-color: #A259FF;"
+                            type="button">
+                            <i class="bi bi-envelope me-2"></i> Subscribe
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="mt-3 mt-md-5 " style="border-color: #f8f5f5;">
+            <small class="ps-md-5 text-start" style="color: #9e9a9a;">Ⓒ NFT Market. Use this template freely.</small>
+        </div>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
